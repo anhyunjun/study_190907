@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+        <br>
+        <br>
+        <h1>디테일 페이지입니다</h1>
+        <br>
+        <div class="container jumbotron">
+              <h1>{{ blog.title }}</h1>
+              <p>{{ blog.pub_date }}</p>
+              <p>{{ blog.body }}</p>
+              <a href="{% url 'home' %}">돌아가기</a>
+        </div>                
+    </body>
+{% endblock %}
